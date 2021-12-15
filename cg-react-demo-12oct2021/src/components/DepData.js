@@ -1,0 +1,87 @@
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import { useState } from "react";
+
+const DepData = (props) => {
+
+    const depDataFromStore = useSelector((state) => state.dep.depState);
+
+    return (
+        <div>
+            <h1 className="display-4 text-primary mt-3" >Department Data Component</h1>
+            <p>Department data component</p>
+            <p>Data from store: {depDataFromStore.dName}</p>
+        </div>
+    );
+}
+export default DepData;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { getDepById } from "../redux/DepSlice";
+// import { useDispatch, useSelector } from "react-redux";
+// import axios from "axios";
+// import { useState } from "react";
+
+// // step 4 - use redux store and reducers in components 
+
+// const DepData = (props) => {
+
+//     // ctearing state is not required with redux  
+//     // const [variable, setVariable] = useState('');
+
+//     const dispatch = useDispatch();
+
+//     // this data is coming from store 
+//     const depDataFromStore = useSelector((state) => state.dep.depState);
+
+
+//     return (
+//         <div>
+//             <h1 className="display-4 text-primary mt-3" >Department Data Component</h1>
+//             <p>Department data component</p>
+//             <p>Data from store: {depDataFromStore.did} {depDataFromStore.deptName} {depDataFromStore.location}</p>
+            
+//         </div>
+//     );
+// }
+// export default DepData;
